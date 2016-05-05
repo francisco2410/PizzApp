@@ -1,0 +1,42 @@
+<ion-view view-title="Historial">
+
+
+<div class="bar bar-subheader 
+  item-input">
+  <label class="item-input-wrapper">
+    <i class="icon ion-search  icon-stable"></i>
+    <input type="search" ng-model="query" placeholder="Buscar en mis Pedidos">
+  </label>
+</div>
+    <ion-content ng-controller="ListController" class="has-subheader ion-content">
+       
+         
+
+  <ion-list>
+
+    <ion-item  ng-class="{'star': item.star}" 
+    ng-repeat='item in carrito | filter: query'
+    class="item item-thumbnail-left item-icon-right
+      item-text-wrap card padding"  ui-sref="menu2.detalle({aId: item.folio})">
+
+      
+     <img class="foto" ng-src="img/{{item.categoria}}.jpg"
+        alt="{{ item.name }} Photo">
+      <h2 class="tituloprecio1">Categoria : {{item.categoria}} {{item.producto}}</h2>
+      <h2 class="tituloprecio1">Tamaño : {{item.size}}</h2>
+      <h3 class="tituloprecio1">Piezas : {{item.pieces}}</h3>
+      <h4 class="tituloprecio1">Total a pagar : ${{item.price}} Pesos</h4>
+      
+      <button class="button button-clear icon ion-trash-a button-positive"
+        ng-click="onItemDelete(item)"
+        ng-show="item.star"></button>
+      <ion-option-button class="button-assertive"
+        ng-click="onItemDelete(item)">
+        <i class="icon ion-trash-a"></i>
+      </ion-option-button>
+      
+     
+    </ion-item>
+  </ion-list>
+    </ion-content>
+</ion-view>

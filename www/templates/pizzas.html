@@ -1,0 +1,116 @@
+     <link href="css/style.css" rel="stylesheet">
+
+<ion-view title="Elije tu orden de pizza">
+<ion-nav-buttons side="left" ng-show="false">
+        <button ui-sref="menu2.menu" class="button button-icon button-clear ion-arrow-left-c">
+        </button>
+      </ion-nav-buttons>
+    <ion-content overflow-scroll="true" padding="true" style="background: url(img/fondorojo2.jpg) no-repeat center;" class="has-header splash" ng-controller="popup">
+
+<div class="list">
+
+  
+
+
+        <ion-list>
+                            
+<div class="row">
+     <div class="col">   
+
+
+  <div class="item-image ">
+    <img src="img/clasica.jpg" class="redondo">
+  </div>
+         <ion-checkbox ng-model="filter.clasica"><h2 class="letrasmenu">Clasica</h2></ion-checkbox>
+
+     </div>
+
+
+     <div class="col">   
+
+        
+  <div class="item-image">
+    <img src="img/italiana.jpg" class="redondo">
+  </div>
+    <ion-checkbox ng-model="filter.italiana"><h2 class="letrasmenu">Italiana</h2></ion-checkbox>
+
+     </div>
+
+
+ </div>
+
+<div class="row">
+     <div class="col">   
+
+
+  <div class="item-image ">
+    <img src="img/vegetariana.jpg" class="redondo">
+  </div>
+         <ion-checkbox ng-model="filter.Vegetariana"><h2 class="letrasmenu">Vegetal</h2></ion-checkbox>
+
+     </div>
+
+
+     <div class="col">   
+
+        
+  <div class="item-image">
+    <img src="img/clasica.jpg" class="redondo">
+  </div>
+    <ion-checkbox ng-model="filter.Hawayana"><h2 class="letrasmenu">Haway</h2></ion-checkbox>
+
+     </div>
+
+
+ </div>
+
+
+
+     
+
+
+           
+        </ion-list>
+
+
+
+  <label class="item item-input item-select item-assertive">
+    <div class="input-label ">
+     Tamaño
+    </div>
+    <select>
+      <option>Chica</option>
+      <option selected>Mediana</option>
+      <option>Grande</option>
+       <option>Familiar</option>
+        <option>Personal</option>
+    </select>
+  </label>
+  
+<br>
+
+  <label class="item item-input item-select item-assertive">
+    <div class="input-label">
+     Cantidad
+    </div>
+    <select>
+      <option selected>1</option>
+      <option>2</option>
+      <option>3</option>
+       <option>4</option>
+        <option>5</option>
+        <option>6</option>
+      <option>7</option>
+       <option>8</option>
+        <option>9</option>
+    </select>
+  </label>
+ 
+</div>
+
+     
+
+<button  class="button button-assertive button-block" ng-click="showConfirm()">Comprar pizza</button>
+  
+    </ion-content>
+</ion-view>
