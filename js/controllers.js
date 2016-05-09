@@ -14,7 +14,7 @@ angular.module('starter.controllers', [])
             console.log(jsonResponse.data.user);
          }
         //aqui van a guardar el id y el user para las otras transaccione
-        //la secion la mantendran con windows.localstorge
+        //la sesion la mantendran con windows.localstorge
       });
   });
 })
