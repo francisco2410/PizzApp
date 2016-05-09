@@ -1,0 +1,32 @@
+<ion-view view-title="Historial">
+
+<div class="bar bar-subheader 
+  item-input">
+  <label class="item-input-wrapper">
+    <i class="icon ion-search  icon-stable"></i>
+    <input type="search" ng-model="query" placeholder="Buscar en mis Pedidos">
+  </label>
+</div>
+    <ion-content overflow-scroll="true" padding="true" style="background: url(img/fondorojo2.jpg) no-repeat center;" ng-controller="ListController" class="has-subheader">
+       
+         
+
+  <div class="list">
+
+    <ion-item  ng-class="{'star': item.star}" 
+    ng-repeat='item in carrito | filter: query'
+    class="item item-thumbnail-left 
+      item-text-wrap"  >
+
+
+     <img class="foto" ng-src="img/{{item.categoria}}.jpg"
+        alt="{{ item.name }} Photo">
+      <h2 class="titulo">Categoria : {{item.categoria}} {{item.producto}}</h2>
+      <h2 class="titulo">Tamaño : {{item.size}}</h2>
+      <h3 class="titulo">Piezas : {{item.pieces}}</h3>
+      <p class="tituloprecio1">Total a pagar : ${{item.price}} Pesos</p>
+     
+    </ion-item>
+  </div>
+    </ion-content>
+</ion-view>

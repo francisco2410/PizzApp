@@ -1,0 +1,12 @@
+{
+  "carrito": [
+    {  
+      "usuario": "PizzApp1234",
+      "direccion":"Mi casa",
+      "telefono":"646-124-45-45",
+      "correo": " PizzApp1234@gmail.com",
+      "compras": "5",
+      "nombre": "Proyecto PizzApp"
+    }
+  ]
+}

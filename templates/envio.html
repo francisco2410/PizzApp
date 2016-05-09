@@ -1,0 +1,28 @@
+<ion-view title="Datos de la Compra ">
+
+    <ion-content overflow-scroll="true" padding="true" class=" splash">
+
+<ion-list>
+     
+  <div class="card" ng-repeat="item in carrito | filter: { folio: whichartist }">
+   <div class="item item-avatar item-assertive">
+         <img ng-src="img/portada.png">
+      <ion-label class="letra ">Folio : {{item.folio}}</ion-label>
+   </div>
+
+   <div class="item item-body item-assertive">
+         <img ng-src="img/{{item.categoria}}.jpg">
+  
+   Gracias por su compra , Buen dia!
+   <h2 class="titulo">Categoria : {{item.categoria}}</h2>
+     <h2 class="titulo">Tipo de producto : {{item.producto}}</h2>
+      <h2 class="titulo">Tamaño : {{item.size}}</h2>
+      <h3 class="titulo">Piezas : {{item.pieces}}</h3>
+      <p class="tituloprecio">Total a pagar : ${{item.price}} Pesos</p>
+  
+</div>
+  </div>
+    </ion-list>
+  <button ui-sref="menu2.menu" type="submit"class="button button-assertive button-block">Efectuar Pago</button>
+    </ion-content>
+</ion-view>

@@ -1,0 +1,51 @@
+<ion-view hide-nav-bar="true" > 
+
+    <ion-content  ng-controller="TeamController "  class="ion-content">
+     <div class="about-header">
+          <ion-slide-box auto-play="false" show-pager="false">
+            <ion-slide data-ng-repeat="i in ['people','food','sports']">
+            <div class="profile-media">
+           
+              <img ng-src="img/skyline.jpg" class="about-image profile-background-image" width="400" height="120">
+              <div class="bar bar-footer bar-assertive" style="position: static;">
+                <div class="title">Equipo De Desarrollo</div>
+                <div class="buttons buttons-right">
+                    <button class="button button-fab button-assertive-900 icon ion-ios-people">
+                        
+                    </button>
+                </div>
+            </div>
+
+            
+      </div>
+            </ion-slide>
+          </ion-slide-box>
+       
+    </div>   
+        
+ 
+  <ion-list >
+  
+    <ion-item  ng-class="{'star': item.star}" 
+    ng-repeat='item in carrito | filter: query'
+    class="item item-thumbnail-left item-icon-right
+      item-text-wrap card padding"  href="#/page2/equipo/{{item.nombre}}">
+
+
+     <img class="foto" ng-src="img/{{item.nombre}}.jpg"
+        alt="{{ item.name }} Photo">
+      <h4 class="tituloprecio1">{{item.nombre}}</h4>
+      <h2 class="tituloprecio1">{{item.carrera}}</h2>
+      <p class="tituloprecio1">{{item.perfil}} </p>
+      <button class="button button-clear icon ion-thumbsup button-positive"
+        ng-click="toggleStar(item)"
+        ng-show="item.star"></button>
+      <ion-option-button class="button-assertive"
+        ng-click="toggleStar(item)">
+        <i class="icon ion-thumbsup"></i>
+      </ion-option-button>
+      
+    </ion-item>
+  </ion-list>
+    </ion-content>
+</ion-view>

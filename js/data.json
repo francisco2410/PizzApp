@@ -1,0 +1,68 @@
+{
+  "carrito": [
+    {  
+      "folio": "12345",
+      "categoria":"pizza",
+      "producto":"Hawallana",
+      "price": " 250.00",
+      "size": "Familiar",
+      "pieces": "3"
+    },{
+      "folio": "11111",
+      "categoria":"bebida",
+      "producto":"jugo",
+      "price": " 15.00",
+      "size": "mediano",
+      "pieces": "1"
+    },{
+      "folio": "2323232",
+      "categoria":"postre",
+      "producto":"pay de queso",
+      "price": " 45.00",
+      "size": "chico",
+      "pieces": "1"
+    },{
+      "folio": "654985",
+      "categoria":"bebida",
+      "producto":"agua",
+      "price": " 100.00",
+      "size": "grande",
+      "pieces": "3"
+    },{
+      "folio": "12122",
+      "categoria":"pizza",
+      "producto":"mexicana",
+      "price": " 150.00",
+      "size": "Familiar",
+      "pieces": "1"
+    },{
+     "folio": "0909090",
+      "categoria":"pizza",
+      "producto":"peperoni",
+      "price": " 500.00",
+      "size": "Familiar",
+      "pieces": "4"
+    },{
+     "folio": "56565656",
+      "categoria":"bebida",
+      "producto":"coca-cola",
+      "price": " 50.00",
+      "size": "grande",
+      "pieces": "2"
+    },{
+      "folio": "5655453",
+      "categoria":"pizza",
+      "producto":"Hawallana",
+      "price": " 250.00",
+      "size": "Familiar",
+      "pieces": "3"
+    },{
+     "folio": "454545",
+      "categoria":"pizza",
+      "producto":"peperoni",
+      "price": " 350.00",
+      "size": "personal",
+      "pieces": "7"
+    }
+  ]
+}
